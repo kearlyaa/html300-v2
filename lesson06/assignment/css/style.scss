@@ -1,6 +1,14 @@
-// Import partials here
-@import 'base.normalize';
-@import 'settings.variables';
-@import 'settings.responsive';
-@import 'components.content';
+$primary: #339966
+$accent: #33cccc
 
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+body
+background: $primary
+color: $accent
+div
+background: $primary
++border-radius(10px)
