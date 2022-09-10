@@ -6,8 +6,7 @@
 <div class=background><h1>Portfolio</h1>
 </div>
 
-<div class="gallery" v-for="image in gallery">
-  <img class="img" v-bind:src="image.picture" v-bind:alt="image.alt">
+<div v-for="images in images" {{images}}:key="item.id"> {{index}}.{{image.name}}
   </div>
 
 <footer class="footer">
