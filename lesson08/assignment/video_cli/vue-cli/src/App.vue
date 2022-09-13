@@ -1,16 +1,16 @@
 <template>
-  <div id="app">
+  <div id="App">
     <h1>{{ msg }}</h1>
     <h2>Portfolio</h2>
-<nav>
-    <ul>
-    <li v-for="link in links"> {{link}}</li>
-    </ul>
-</nav>
-    <div class="gallery" v-for="image in gallery">
-  <img class="img" v-bind:src="image.picture" v-bind:alt="image.alt">
+    <nav>
+        <ul>
+        <li v-for="(link, i) in links" :key="i"> {{link}}</li>
+        </ul>
+    </nav>
+    <div class="gallery" v-for="(image,i) in gallery" :key="i">
+      <img class="img" v-bind:src="image.picture" v-bind:alt="image.alt">
+    </div>
   </div>
-</div>
 </template>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"></script>
@@ -19,41 +19,19 @@
 
 export default {
   name: 'App',
-  data () {
+  data() {
     return {
-    msg: 'Plant Portraits',
-    links: ['Home', 'Portfolio', 'Process', 'Book a Consultation'],
-    gallery:[
-    {picture: require('./images/plant1.jpeg'), alt:'Pink cherry blossom flower', title: 'Cherry Blossom'};
-    {picture: require('./images/plant2.jpeg'), alt: 'Purple phlox', title: 'Phlox'};
-    {picture: required('./images/plant3.jpeg'), alt: 'Hot pink peony blossom', title: 'Peony'};
-    {picture: required('./images/plant4.jpeg'), alt: 'Light purple foxglove flower', title: 'Foxglove'};
-    ],
+      msg: 'Plant Portraits',
+      links: ['Home', 'Portfolio', 'Process', 'Book a Consultation'],
+      gallery:
+      [
+        {picture: require('./assets/plant1.jpg'), alt:'Pink cherry blossom flower', title: 'Cherry Blossom'},
+        {picture: require('./assets/plant2.jpg'), alt: 'Purple phlox', title: 'Phlox'},
+        {picture: require('./assets/plant3.jpg'), alt: 'Hot pink peony blossom', title: 'Peony'},
+        {picture: require('./assets/plant4.jpg'), alt: 'Light purple foxglove flower', title: 'Foxglove'}
+      ]
     }
   }
-}
-</script>
-
-<script>
-const showHide = {
-data () {
-  return {
-    isActive: false,
-  }
-},
-
-computed: {
-  classObj () {
-    return {
-      [this.state]: this.isActive
-    }
-  }
-},
-methods: {
-  toggleState () {
-    this.isActive = this.isActive ? false : true;
-}
-}
 }
 </script>
 
@@ -66,6 +44,10 @@ methods: {
   padding-left: 60px;
   $primary: #339966;
   $accent: #33cccc;
+}
+
+img{
+  max-width: 100%;
 }
 
 h3 {padding-left: 20px;}
