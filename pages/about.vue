@@ -1,7 +1,7 @@
 <template>
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,11 +26,13 @@
 <div class="topnav">
 <nav>
   <ul>
+    <ul>
   <li><NuxtLink to="/about">About</NuxtLink> 
   <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
   <li><NuxtLink to="/process">Process</NuxtLink> 
   <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
 </li>
+</ul>
 </ul>
 </nav>
 </div>
@@ -52,7 +54,7 @@
   <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
   <nav>
     <ul>
-  <li><NuxtLink to="/about">About</NuxtLink> 
+     <li><NuxtLink to="/about">About</NuxtLink> 
   <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
   <li><NuxtLink to="/process">Process</NuxtLink> 
   <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
@@ -65,10 +67,10 @@
 </html>
 </template>
 
+
 <script>
 export default {
-  name: 'index'
+    name: 'about'
 }
 </script>
-
 
