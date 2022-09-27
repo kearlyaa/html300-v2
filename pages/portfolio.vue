@@ -33,19 +33,19 @@
       <div class="container container-fl"><!--fluid container spans the entire viewport-->
         <div class="row">
           <div class="col-sm">
-            <img class="img-fluid" src="./images/plant1.jpeg" alt="Pink cherry blossom flower"><!-- images are classed with img-fluid for responsivity when screen changes sizes, and rounded for more visual interest-->
+            <img class="img-fluid" src="./components/images/plant1.jpeg" alt="Pink cherry blossom flower"><!-- images are classed with img-fluid for responsivity when screen changes sizes, and rounded for more visual interest-->
           </div>
           <div class="col-sm">
-            <img class="img-fluid" src="./images/plant2.jpeg"  alt="Purple phlox">
+            <img class="img-fluid" src="./components/images/plant2.jpeg"  alt="Purple phlox">
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm">
-            <img class="img-fluid" src="./images/plant3.jpeg"  alt="Hot pink peony blossom">
+            <img class="img-fluid" src="./components/images/plant3.jpeg"  alt="Hot pink peony blossom">
           </div>
           <div class="col-sm">
-            <img class="img-fluid" src="./images/plant4.jpeg"  alt="Light purple foxglove flower">
+            <img class="img-fluid" src="./components/images/plant4.jpeg"  alt="Light purple foxglove flower">
           </div>
         </div>
 <!--popover function added with popper.js, a function to tell the button what to do when clicked, and info provided in a small bubble once the button is clicked-->
