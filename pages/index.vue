@@ -12,14 +12,6 @@
 </head>
 
 <body>
- 
-
-<header>
-  <div>
-  <a href="#main-content" class="hidden">Skip to main content</a>
-    <h1>Plant Portraits</h1>
-  </div>
-
 
   <main class="main">
     <h1>About</h1>
