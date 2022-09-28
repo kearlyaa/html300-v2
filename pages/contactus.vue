@@ -9,15 +9,7 @@
             <a href="#main-content" class="hidden">Skip to main content</a>
   
       </div>
-  <nav>
-    <ul>
-   <li><NuxtLink to="/about">About</NuxtLink> 
-  <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
-  <li><NuxtLink to="/process">Process</NuxtLink> 
-  <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
-  </li>
-  </ul>
-  </nav>
+
   
   <br>
   <br>
