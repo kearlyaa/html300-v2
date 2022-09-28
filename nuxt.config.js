@@ -45,7 +45,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    generate: {
+    routes: [
+      './pages/about.vue',
+      './pages/portfolio.vue',
+      './pages/process.vue',
+      './pages/contactus.vue'
+    }
+    ]
   }
+    
   export default {
   head: {
     script: [
