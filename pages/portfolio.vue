@@ -2,25 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
   <title>Plant Portraits</title>
   </head>
-
-  <body>
-        
-
-<!--inline nav bar-->
-<div class="topnav">
-    <nav>
-      <ul>
-          <li><NuxtLink to="/about">About</NuxtLink> 
-  <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
-  <li><NuxtLink to="/process">Process</NuxtLink> 
-  <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
-</li>
-</ul>
-    </nav>
-    </div>
+<body>
 <main>
       <div class="container container-fl"><!--fluid container spans the entire viewport-->
         <div class="row">
