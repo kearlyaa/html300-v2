@@ -12,28 +12,14 @@
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+ 
 
 <header>
   <div>
   <a href="#main-content" class="hidden">Skip to main content</a>
-
     <h1>Plant Portraits</h1>
   </div>
-</header>
-<div class="topnav">
-<nav>
-  <ul>
-  <li><NuxtLink to="/about">About</NuxtLink> 
-  <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
-  <li><NuxtLink to="/process">Process</NuxtLink> 
-  <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
-</li>
-</ul>
-</nav>
-</div>
+
 
   <main class="main">
     <h1>About</h1>
@@ -47,20 +33,7 @@
 
       <p>Posuere ipsum malesuada volutpat parturient. Iaculis duis tempor molestie viverra commodo hendrerit tincidunt mattis. Hac etiam eget ut condimentum. Gravida felis consequat, torquent at! Sagittis gravida quam purus odio maecenas scelerisque blandit gravida ante nisl. Quam hac ligula, felis vestibulum cras vitae. Tristique est purus arcu viverra varius venenatis sed netus. Nunc gravida sem!</p>
   </main>
-  <footer>
-      <img src=# alt="Logo">
-  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-  <nav>
-    <ul>
-  <li><NuxtLink to="/about">About</NuxtLink> 
-  <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
-  <li><NuxtLink to="/process">Process</NuxtLink> 
-  <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
-  </li>
-    </ul>
-  </nav>
-  <p><small>© 2022 Plant Portraits LLC | Seattle, WA</small></p>
-  </footer>
+ 
 </body>
 </html>
 </template>
