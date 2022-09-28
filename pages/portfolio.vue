@@ -4,8 +4,9 @@
   <head>
   <title>Plant Portraits</title>
   </head>
-<body>
+
 <main>
+<h1> Portfolio </h1>
       <div class="container container-fl"><!--fluid container spans the entire viewport-->
         <div class="row">
           <div class="col-sm">
@@ -32,7 +33,7 @@
       </div>
 
     </main>
-  </body>
+  
 </html>
 </template>
 
