@@ -4,6 +4,7 @@
   <head>
   <title>Plant Portraits</title>
   </head>
+  </main>
     <div>
         <h1>Contact Us</h1>
       </div>
@@ -22,7 +23,7 @@
       <p>Please include the number of plants you would like photographed along with any editing effects you would like added in post production.</p>
     </div>
   </div>
-    
+    </main>
     </html>
 </template>
 
