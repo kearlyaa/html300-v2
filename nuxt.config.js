@@ -46,4 +46,12 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
+  export default {
+  head: {
+    script: [
+      {
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js",
+      },
+    ],
+  }
 }
