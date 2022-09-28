@@ -6,8 +6,6 @@
   </head>
     <div>
         <h1>Contact Us</h1>
-            <a href="#main-content" class="hidden">Skip to main content</a>
-  
       </div>
 
   
