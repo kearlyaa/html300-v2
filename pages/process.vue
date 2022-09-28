@@ -10,27 +10,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <title>Plant Portraits</title>
   </head>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
-<header>
+  
   <div>
-
       <h1>Process</h1>
   </div>
-</header>
-<div>
-<nav>
-    <ul>
-  <li><NuxtLink to="/about">About</NuxtLink> 
-  <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
-  <li><NuxtLink to="/process">Process</NuxtLink> 
-  <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
-</li>
-</ul>
-  </nav>
-  </div>
+
 <h1>Step 1: Consultation</h1>
 
 
@@ -83,21 +67,6 @@
           </div>
         </div>
       </div>
-    
-<footer>
-      <img src=# alt="Logo">
-  <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
-  <nav>
-    <ul>
-        <li><NuxtLink to="/about">About</NuxtLink> 
-         <li><NuxtLink to="/portfolio">Portfolio</NuxtLink>
-         <li><NuxtLink to="/process">Process</NuxtLink> 
-         <li><NuxtLink to="/contactus">Contact Us</NuxtLink>
-  </li>
-    </ul>
-  </nav>
-  <p><small>© 2022 Plant Portraits LLC | Seattle, WA</small></p>
-  </footer>
 
 </html>
 </template>
