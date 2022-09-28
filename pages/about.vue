@@ -11,7 +11,7 @@
     <title>Plant Portraits</title>
 </head>
 
-<body>
+
 
 
   <main class="main">
@@ -26,7 +26,6 @@
 
       <p>Posuere ipsum malesuada volutpat parturient. Iaculis duis tempor molestie viverra commodo hendrerit tincidunt mattis. Hac etiam eget ut condimentum. Gravida felis consequat, torquent at! Sagittis gravida quam purus odio maecenas scelerisque blandit gravida ante nisl. Quam hac ligula, felis vestibulum cras vitae. Tristique est purus arcu viverra varius venenatis sed netus. Nunc gravida sem!</p>
 </main>
-</body>
 </html>
 </template>
 
