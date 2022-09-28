@@ -40,7 +40,7 @@
 
 <script>
 export default {
-  layout: 'about', 'portfolio', 'process', 'contactus',
+  layout: 'nondefault',
   }
 }
 </script>
