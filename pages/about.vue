@@ -1,4 +1,4 @@
-<template>
+dd<template>
   <!DOCTYPE html>
 <html lang="en">
   
@@ -10,8 +10,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <title>Plant Portraits</title>
 </head>
-
-
 
 
   <main class="main">
@@ -32,7 +30,8 @@
 
 <script>
 export default {
-    name: 'about'
+    name: 'about',
+    layout: 'nondefault'
 }
 </script>
 

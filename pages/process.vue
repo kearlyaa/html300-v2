@@ -73,6 +73,7 @@
 
 <script>
 export default {
-    name: 'process'
+    name: 'process',
+    layout: 'nondefault'
 }
 </script>

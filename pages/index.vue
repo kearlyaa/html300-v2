@@ -32,8 +32,8 @@
 
 <script>
 export default {
-  name: 'index'
+  name: 'index',
+  layout: 'nondefault'
 }
 </script>
-
 
