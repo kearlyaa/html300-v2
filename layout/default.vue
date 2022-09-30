@@ -1,12 +1,12 @@
 <template>
   <div>
-    <header>
+    <MyHeader />
   <div>
   <a href="#main-content" class="hidden">Skip to main content</a>
 
     <h1>Plant Portraits</h1>
   </div>
-</header>
+
 <div class="topnav">
 <nav>
   <ul>
@@ -17,11 +17,12 @@
 </li>
 </ul>
 </nav>
+
     <Nuxt />
   </div>
   
 <div>
-  <footer>
+  <MyFooter />
       <img src=# alt="Logo">
   <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu scideru ptistiusam consequunt</p>
   <nav>
@@ -34,12 +35,12 @@
     </ul>
   </nav>
   <p><small>© 2022 Plant Portraits LLC | Seattle, WA</small></p>
-  </footer>
+  
   </div>
 </template>
 
 <script>
-export default {
+import default {
   layout: 'nondefault',
   }
 }
