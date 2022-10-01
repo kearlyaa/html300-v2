@@ -13,7 +13,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -51,16 +56,9 @@ export default {
       './pages/portfolio.vue',
       './pages/process.vue',
       './pages/contactus.vue'
+      ]
     }
-    ]
   }
     
-  export default {
-  head: {
-    script: [
-      {
-        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js",
-      },
-    ],
-  }
+
 }

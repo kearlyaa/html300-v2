@@ -1,17 +1,5 @@
 <template>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <title>Plant Portraits</title>
-</head>
-
-<body>
 
   <main class="main">
     <h1>About</h1>
@@ -26,8 +14,7 @@
       <p>Posuere ipsum malesuada volutpat parturient. Iaculis duis tempor molestie viverra commodo hendrerit tincidunt mattis. Hac etiam eget ut condimentum. Gravida felis consequat, torquent at! Sagittis gravida quam purus odio maecenas scelerisque blandit gravida ante nisl. Quam hac ligula, felis vestibulum cras vitae. Tristique est purus arcu viverra varius venenatis sed netus. Nunc gravida sem!</p>
   </main>
  
-</body>
-</html>
+
 </template>
 
 <script>
