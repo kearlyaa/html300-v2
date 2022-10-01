@@ -1,0 +1,37 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "C:\\\\dev\\\\html5300\\\\laurenrowe95\\\\html300-v2\\\\Nuxt-Final-Project\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_0d277d0d"
+  },
+  {
+    "name": "contactus",
+    "path": "/contactus",
+    "component": "C:\\\\dev\\\\html5300\\\\laurenrowe95\\\\html300-v2\\\\Nuxt-Final-Project\\\\pages\\\\contactus.vue",
+    "chunkName": "pages/contactus",
+    "_name": "_5961e084"
+  },
+  {
+    "name": "portfolio",
+    "path": "/portfolio",
+    "component": "C:\\\\dev\\\\html5300\\\\laurenrowe95\\\\html300-v2\\\\Nuxt-Final-Project\\\\pages\\\\portfolio.vue",
+    "chunkName": "pages/portfolio",
+    "_name": "_4b891548"
+  },
+  {
+    "name": "process",
+    "path": "/process",
+    "component": "C:\\\\dev\\\\html5300\\\\laurenrowe95\\\\html300-v2\\\\Nuxt-Final-Project\\\\pages\\\\process.vue",
+    "chunkName": "pages/process",
+    "_name": "_6d5b7cef"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\dev\\\\html5300\\\\laurenrowe95\\\\html300-v2\\\\Nuxt-Final-Project\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2cdf57d2"
+  }
+]
