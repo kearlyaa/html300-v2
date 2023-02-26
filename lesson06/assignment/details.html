@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Image Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main class="main">
+
+        <!--nav bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="image-pg.html">Image Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="details.html">Top 3 Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div>
+          <h1>Can you guess the IMDB users' top 3 movies?</h1>
+      </div>
+
+      <div class="container">
+        <div class="container-fluid">
+        <!--3 accordion features-->
+
+        <!--1st accordion-->
+          <div class="accordion" id="accordion1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                  data-toggle="tooltip"  
+                  title="Click to expand/collapse"
+                >
+                  IMDB's #1 Movie!
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-parent="#accordion1"
+              >
+             
+                <div class="accordion-body">
+                  <div>
+                    <h2>The Shawshank Redemption</h2>
+                      <img class="img-thumbnail" src="https://img.omdbapi.com/?i=tt0111161&h=600&apikey=b77d742c"/>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!--2nd accordion-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+        
+                >
+                IMDB's #2 Movie!
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                    <div>
+                        <h2>The Godfather</h2>
+                          <img class="img-thumbnail" src="https://img.omdbapi.com/?i=tt0068646&h=600&apikey=b77d742c"/>
+                        </div>
+                </div>
+              </div>
+            </div>
+
+            <!--3rd accordion-->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                IMDB's #3 Movie!
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body">
+                    <div>
+                        <h2>The Dark Knight</h2>
+                          <img class="img-thumbnail" src="https://img.omdbapi.com/?i=tt0468569&h=600&apikey=b77d742c"/>
+                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </main>
+  </body>
+</html>
