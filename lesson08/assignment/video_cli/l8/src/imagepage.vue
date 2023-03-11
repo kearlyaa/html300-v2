@@ -8,6 +8,7 @@
         <!-- display images in 2 rows -->
         <div class="row">
           <div class="col-sm" v-for="image in images1" :key="image.id">
+            <!-- Updated src to use require() so dynamic links work -->
             <img :src="require('@/images/'+image.url)" class="img-fluid" alt="Movie themed images">
           </div>
         </div>
