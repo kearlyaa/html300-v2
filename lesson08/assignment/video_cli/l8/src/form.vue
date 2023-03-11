@@ -43,7 +43,8 @@
     methods: {
       submitForm() {
         // form submission logic here
-        if (/* form submission is successful */) {
+        /* form submission is successful */
+        if (this.formSubmitted) {
           this.formSubmitted = true;
           this.formError = false;
         } else {

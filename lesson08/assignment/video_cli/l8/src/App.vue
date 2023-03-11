@@ -3,19 +3,17 @@
     <Navbar />
     <router-view />
     <ContactForm />
-    <post
-    v-for="post in posts"
-    v-bind:post="post"
-    v-bind:key="post.id">
+    <post v-for="(post, id) in posts"
+      :post="post"
+      :key="id">
+  </post>
   </div>
 </template>
 
 <script>
 //imports pages
 import Navbar from './Navbar.vue';
-import Home from '/Home.vue';
 import Post from './post.vue';
-import Top3 from './top3.vue';
 import ContactForm from './form.vue';
 
 export default {
@@ -26,8 +24,6 @@ export default {
   },
   data() {
     return {
-      searchTerm: '',
-        movies: [],
       posts: [
         {
           src: "../images/camera1.jpg",
@@ -76,26 +72,7 @@ export default {
   },
 };
 
-router: {
-    mode: 'history',
-    routes: [
-      {
-        path: '/',
-        name: 'Home',
-        component: Home,
-      },
-      {
-        path: '/image',
-        name: 'imagepage',
-        component: ImagePage,
-      },
-      {
-        path: '/top3',
-        name: 'Top3',
-        component: Top3,
-      },
-    ],
-  };
+
 </script>
 
 

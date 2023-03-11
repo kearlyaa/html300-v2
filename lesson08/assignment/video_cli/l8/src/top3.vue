@@ -1,36 +1,5 @@
 <template>
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">My Website</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="image-pg.html">Image Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="details.html">Top 3 Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="form.html">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-  
       <div>
         <h1>Can you guess the IMDB users' top 3 movies?</h1>
       </div>
@@ -48,7 +17,6 @@
                   data-toggle="collapse"
                   :data-target="'#collapseOne'+index"
                   :aria-controls="'collapseOne'+index"
-                  data-toggle="tooltip"
                   title="Click to expand/collapse"
                 >
                   {{ movie.title }}
