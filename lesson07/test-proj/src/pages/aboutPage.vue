@@ -1,80 +1,117 @@
 <template>
-    <div>
-        <h1>About Page</h1>
-        <p>Test test test</p>
-        <div class="accordion container" id="accordionExample">
-            <!--v-for loop here-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                        aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
-                    </button> <!--data-bs-target will be a variable in the loop to match with the id below-->
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                        plugin adds the appropriate classes that we use to style each element. These classes control the
-                        overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
-                        this with custom CSS or overriding our default variables. It's also worth noting that just about any
-                        HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                </div>
+    <div class="main-content">
+        <h1>About Us</h1>
+        <!--v-for loop here-->
+        <div class="card" v-for="item in items" :key="item.id">
+            <div class="card-header" @click.prevent="toggleExpand(item)">
+                <span>{{ item.title }}</span>
             </div>
-            <!--end v-for loop-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                        just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                        overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item #3
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                    collapse plugin adds the appropriate classes that we use to style each element. These classes
-                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
-                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                </div>
+    
+            <div class="card-body"
+            :ref="'content' + item.id"
+            :style="[item.isExpand ? {height: item.computedHeight} : {}]">
+            <hr />
+            <div class="card-content">{{ item.content }}</div>
             </div>
         </div>
+        <!--end v-for loop-->
     </div>
-</div></template>
+</template>
 
 <script>
     export default {
-        name: 'galleryPage', 
+        name: 'aboutPage', 
         data() {
             return {
-                images: [
-                    {src: 'img1.jpg', alt: 'a ball'},
-                    {src: 'img2.jpg', alt: 'a dog'},
-                    {src: 'img3.jpg', alt: 'a dog'}
+                items: [
+                    {
+                        id: 1,
+                        title: "Who created WA Adventures?",
+                        content: "Emmett Schreiber",
+                        isExpand: false,
+                        computedHeight: 0,
+                    },
+                    {
+                        id: 2,
+                        title: "When was WA Adventures founded?",
+                        content: "2023",
+                        isExpand: false,
+                        computedHeight: 0,
+                    },
+                    {
+                        id: 3,
+                        title: "What is the point of WA Adventures?",
+                        content: "To encourage explorers and adventurers to see more of Washington state",
+                        isExpand: false,
+                        computedHeight: 0,
+                    }
                 ]
             }
-        }
-    }
+        },
+        methods: {
+            toggleExpand(item) {
+                item.isExpand = !item.isExpand;
+            },
+            getComputedHeight() {
+                this.items.forEach(item => {
+                    var content = this.$refs["content" + item.id][0];
+        
+                    content.style.height = 'auto';
+                    content.style.position = 'absolute';
+                    content.style.visibility = 'hidden';
+                    content.style.display = 'block';
+
+                    var height = getComputedStyle(content).height;
+                    item.computedHeight = height;
+
+                    content.style.height = 0;
+                    content.style.position = null;
+                    content.style.visibility = null;
+                    content.style.display = null;
+                });
+            }
+        },
+        mounted() {
+            this.getComputedHeight();
+        },
+    };
 </script>
+
+<style scoped>
+.card {
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 1rem 20rem;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.card-header,
+.card-content {
+    padding: 1rem 0;
+}
+
+.card-header {
+    cursor: pointer;
+}
+
+.card-header span {
+    font-weight: bold;
+}
+
+.card-body {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+hr {
+    margin: 0;
+    height: 1px;
+    display: block;
+    border-width: 0;
+    border-top: 1px solid #aaa;
+}
+</style>
