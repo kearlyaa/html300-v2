@@ -3,7 +3,10 @@ export default {
         toggleBorder() {
             this.hasBorder = !this.hasBorder;
             if (this.hasBorder) {
-                console.log("testing")
+                console.log("border")
+            }
+            else {
+                console.log("no border")
             }
         }
     }
