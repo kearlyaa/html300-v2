@@ -7,8 +7,7 @@
             :key="index" 
             :title="item.title"
             :src="require(`@/assets/images/${item.src}`)" 
-            :alt="item.alt" 
-            class="img-fluid w-75 pb-3" />
+            :alt="item.alt" />
         </div>
     </div>
 </template>
