@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2>{{ title }}</h2>
-
+        <img>{{ src }}
     </div>
 </template>
 
@@ -9,7 +9,7 @@
     export default {
         name: 'Images',
         props: [
-            'title',
+            'title', 'src'
         ],
     }
 </script>
