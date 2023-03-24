@@ -28,6 +28,6 @@ import Images from '../components/Images.vue'
                     {title: 'Forest', src: 'img3.jpg', alt: 'A forest in Washington state'}
                 ]
             }
-        }
+        },
     }
 </script>

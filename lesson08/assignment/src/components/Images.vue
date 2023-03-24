@@ -1,14 +1,22 @@
 <template>
     <div>
         <h2>{{ title }}</h2>
-        <!-- <img class="img-fluid pb-3 ml-3 mr-3" @click="toggleBorder()">{{ src }} -->
-        <p @click="toggleBorder()">{{ alt }}</p>
+        <img>
+        <p :class="[isActive ? '.hasBorder' : '.noBorder']" @click="toggleBorder()">{{ alt }}</p>
     </div>
 </template>
 
 <script>
-import toggleBorder from '../mixins/toggleBorder'
-
+    const toggleBorder = {
+        data: {
+            isActive: false,
+        },
+        methods: {
+            toggleBorder() {
+                this.isActive = !this.isActive;
+            }
+        }
+    }
     export default {
         name: 'Images',
         props: {
@@ -23,5 +31,15 @@ import toggleBorder from '../mixins/toggleBorder'
 <style scoped>
 p {
     font-style: italic;
+}
+img {
+    padding-bottom: 3rem;
+    margin: 0 3rem;
+}
+.hasBorder {
+    border: 5px solid red;
+}
+.noBorder {
+    border: none;
 }
 </style>
