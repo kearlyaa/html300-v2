@@ -1,19 +1,27 @@
 <template>
     <div>
         <h2>{{ title }}</h2>
-        <img>
-        <p :class="[isActive ? '.hasBorder' : '.noBorder']" @click="toggleBorder()">{{ alt }}</p>
+        <img 
+            :src="src" 
+            :alt="alt" 
+            :class="[isActive ? 'hasBorder' : 'noBorder']" 
+            @click="toggleBorder()"
+        />
+        <!-- <p :class="[isActive ? '.hasBorder' : '.noBorder']" @click="toggleBorder()">{{ alt }}</p> -->
     </div>
 </template>
 
 <script>
     const toggleBorder = {
-        data: {
-            isActive: false,
+        data() {
+            return{
+                isActive: false,
+            }
         },
         methods: {
             toggleBorder() {
                 this.isActive = !this.isActive;
+                console.log('test')
             }
         }
     }
