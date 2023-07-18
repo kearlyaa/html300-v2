@@ -1,0 +1,32 @@
+// _components.content.scss
+
+.content {
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 18px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+  
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #c7d5e9;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #1a4394;
+      }
+    }
+  }
